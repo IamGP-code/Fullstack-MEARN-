@@ -1,0 +1,27 @@
+<script>
+    var a=prompt("Enter a Number");
+    var b=prompt("Enter a Number");
+    var c=prompt("Enter your choice");
+    
+    switch(c)
+    {
+        case '+':sum=parseInt(a)+parseInt(b);
+        alert("The Sum of Two No "+a+" and "+b+" is :"+sum);  
+        document.write("The Sum of Two No "+a+" and "+b+" is :"+sum);
+       break;
+        case '-': sub=parseInt(a)-parseInt(b);
+        alert("The Difference of Two No "+a+" and "+b+" is :"+sub);  
+        document.write("The Difference of Two No "+a+" and "+b+" is :"+sub);  
+        break;
+        case '*': mult=parseInt(a)*parseInt(b);
+          document.write("The Product of Two No "+a+" and "+b+" is :"+mult);
+         alert("The Product of Two No "+a+" and "+b+" is :"+mult);
+        break;
+        case '/': div=parseInt(a)/parseInt(b);
+          document.write("The Division of Two No "+a+" and "+b+" is :"+div);
+          alert("The Division of Two No "+a+" and "+b+" is :"+div);
+            break;
+        default:document.write("Invalid Choice");
+        alert("Enter Operator\n Invalid Choice");
+            }
+</script>

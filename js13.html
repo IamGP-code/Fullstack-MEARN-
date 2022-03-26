@@ -1,0 +1,26 @@
+<script>
+    var acc=prompt("Enter Account no");
+    var custname = prompt("Enter Customer Name");
+    var addr = prompt("Enter Customer Address");
+    var phno= prompt("Phone no");
+    var balance = 10000;  
+    alert(" Your Balance Amount is "+balance+"Rupees");
+    var ch=prompt(" Hello "+custname+ "\nChoose your Transaction \nPress 1 : Deposite \n Press 2 : Withdraw \nEnter your choice"); 
+    switch(ch)
+    {
+        case '1': 
+        var dep=prompt("Enter Amount to Deposite " );
+        total=balance+parseInt(dep);
+        alert("Total balance in Your Account is = :"+total+"Rupees");
+        document.write("Total balance is = :"+total+"Rupees");
+    break;
+        
+    case '2': 
+        var wd=prompt("Enter Amount to Witdraw " );
+        total=balance-parseInt(wd);
+        alert("Total balance in Your Account is = :"+total+"Rupees");
+        document.write("Total balance is = :"+total+"Rupees");
+    break;
+default: document.write("Invalid Choice");
+    }
+    </script>
